@@ -1,0 +1,33 @@
+Review: Reading files
+This reading contains the code used in the instructional videos from 
+Reading Files
+
+Introduction
+This follow-along reading is organized to match the content in the video that follows. It contains the same code shown in the next video. These code blocks will provide you with the opportunity to see how the code is written, allow you to practice running it, and can be used as a reference to refer back to. 
+
+You can follow along in the reading as the instructor discusses the code or review the code after watching the video.
+
+file = open("spider.txt")
+
+About this code 
+This line opens the file spider.txt in read mode. The open() function returns a file object which is assigned to the variable file.
+
+52341
+file = open("spider.txt")
+print(file.readline())
+print(file.readline())
+print(file.read())
+file.close()
+About this code 
+These lines print the first three lines of the file. The readline() method reads one line from the file and returns it as a string. The read() method reads the entire file and returns it as a string. The close() method closes the file.
+
+1234567
+file = open("spider.txt")
+print(file.readline())
+print(file.readline())
+print(file.read())
+file.close()
+with open("spider.txt") as file:
+    print(file.readline())
+About this code 
+Finally, the line that uses the with statement to open the file spider.txt is in read mode. The as keyword assigns the file object to the variable file. The code block inside the with statement will be executed, and then the file will be closed automatically.  
