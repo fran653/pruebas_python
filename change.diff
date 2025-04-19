@@ -1,0 +1,23 @@
+--- pruebadif1.py	2025-04-19 00:34:13.350985500 +0200
++++ pruebadif2.py	2025-04-19 00:34:18.142149000 +0200
+@@ -4,7 +4,9 @@
+ 
+ def check_cpu_usage(percent):
+ 
+-    usage = psutil.cpu_percent()
++    usage = psutil.cpu_percent(1)
++
++    print("DEBUG: usage: {}".format(usage))
+ 
+     return usage < percent
+ 
+@@ -13,4 +15,6 @@
+     print("ERROR! CPU is overloaded")
+ 
+ else:
+-        print("Everything ok")
+\ No newline at end of file
++
++
++    print("Everything ok")
+\ No newline at end of file
